@@ -13,6 +13,7 @@ import { Weather } from './class/weather.jsx'
 import { EvenOdd } from './functional/evenorodd.jsx'
 import { FormValidation } from './functional/formvalidation.jsx'
 import { DynamicTable } from './class/dynamictable.jsx'
+import { DisplayItems } from './class/display.jsx'
 // import List from './component/component'
 // import Table from './table'
 function App() {
@@ -41,7 +42,8 @@ function App() {
 {/* <Weather></Weather> */}
 {/* <EvenOdd></EvenOdd> */}
 {/* <FormValidation></FormValidation> */}
-<DynamicTable></DynamicTable>
+{/* <DynamicTable></DynamicTable> */}
+<DisplayItems></DisplayItems>
 
 </>
   )}
