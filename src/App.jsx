@@ -14,6 +14,7 @@ import { EvenOdd } from './functional/evenorodd.jsx'
 import { FormValidation } from './functional/formvalidation.jsx'
 import { DynamicTable } from './class/dynamictable.jsx'
 import { DisplayItems } from './class/display.jsx'
+import{TableForm} from './functional/formTable.jsx'
 // import List from './component/component'
 // import Table from './table'
 function App() {
@@ -43,7 +44,8 @@ function App() {
 {/* <EvenOdd></EvenOdd> */}
 {/* <FormValidation></FormValidation> */}
 {/* <DynamicTable></DynamicTable> */}
-<DisplayItems></DisplayItems>
+{/* <DisplayItems></DisplayItems> */}
+<TableForm></TableForm>
 
 </>
   )}
