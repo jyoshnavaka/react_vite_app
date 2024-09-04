@@ -15,6 +15,8 @@ import { FormValidation } from './functional/formvalidation.jsx'
 import { DynamicTable } from './class/dynamictable.jsx'
 import { DisplayItems } from './class/display.jsx'
 import{TableForm} from './functional/formTable.jsx'
+import { TableFormUpdate } from './functional/formUpdate.jsx'
+import Navigation from './functional/navigations.jsx'
 // import List from './component/component'
 // import Table from './table'
 function App() {
@@ -43,9 +45,12 @@ function App() {
 {/* <Weather></Weather> */}
 {/* <EvenOdd></EvenOdd> */}
 {/* <FormValidation></FormValidation> */}
-{/* <DynamicTable></DynamicTable> */}
+<DynamicTable></DynamicTable>
 {/* <DisplayItems></DisplayItems> */}
-<TableForm></TableForm>
+{/* <TableForm></TableForm> */}
+{/* <TableFormUpdate></TableFormUpdate> */}
+{/* <Navigation>
+</Navigation> */}
 
 </>
   )}
