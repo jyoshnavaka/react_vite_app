@@ -41,10 +41,10 @@ function App() {
 
 {/* <Converter  ></Converter> */}
  {/* <FakeStoreData></FakeStoreData> */}
- <Bulb></Bulb>
+ {/* <Bulb></Bulb> */}
  {/* <CustomTable></CustomTable> */}
 {/* <AddDelete></AddDelete> */}
-{/* <Weather></Weather> */}
+<Weather></Weather>
 {/* <EvenOdd></EvenOdd> */}
 {/* <FormValidation></FormValidation> */}
 {/* <DynamicTable></DynamicTable> */}
