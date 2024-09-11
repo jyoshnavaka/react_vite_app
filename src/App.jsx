@@ -16,7 +16,10 @@ import { DynamicTable } from './class/dynamictable.jsx'
 import { DisplayItems } from './class/display.jsx'
 import{TableForm} from './functional/formTable.jsx'
 import { TableFormUpdate } from './functional/formUpdate.jsx'
-import Navigation from './functional/navigations.jsx'
+import Navigation from './functional/navbar.jsx'
+import { TableNav } from './functional/tableSearch.jsx'
+import Reducer from './functional/reducer.jsx'
+
 // import List from './component/component'
 // import Table from './table'
 function App() {
@@ -32,25 +35,26 @@ function App() {
   <h4>Children</h4>
   <Toast></Toast>
   </Cards>
-  
 <Count></Count>
 <Loader height={100} width={100}></Loader> */}
 
 
 {/* <Converter  ></Converter> */}
  {/* <FakeStoreData></FakeStoreData> */}
- {/* <Bulb></Bulb> */}
+ <Bulb></Bulb>
  {/* <CustomTable></CustomTable> */}
 {/* <AddDelete></AddDelete> */}
 {/* <Weather></Weather> */}
 {/* <EvenOdd></EvenOdd> */}
 {/* <FormValidation></FormValidation> */}
-<DynamicTable></DynamicTable>
+{/* <DynamicTable></DynamicTable> */}
 {/* <DisplayItems></DisplayItems> */}
 {/* <TableForm></TableForm> */}
 {/* <TableFormUpdate></TableFormUpdate> */}
 {/* <Navigation>
 </Navigation> */}
+{/* <TableNav></TableNav> */}
+{/* <Reducer></Reducer> */}
 
 </>
   )}
