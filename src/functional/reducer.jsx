@@ -4,7 +4,11 @@ const reducerFunction=(state,action)=>{
         case "add-data":
             return {...state,todo:[...state.todo,action.payload]}
          case "Delete":
-            return{...state,todo:action.payload}   
+            return{...state,todo:action.payload} 
+          case "update-data":
+            const a=[...state.todo];
+            a[action.index]=action.payload
+            return {...state,todo:a}   
             default :
             return state   
     }
@@ -12,38 +16,55 @@ const reducerFunction=(state,action)=>{
 
 function Reducer(){
     const data={
-        todo:["JavaScript","React JS"]
+        todo:[]
     }
     const [todoData,setTodoData]=useState("")
-
+const [index,setIndex]=useState(null)
 
     const [currentState,dispatchFunction]=useReducer(reducerFunction,data);
     const onChange=(event)=>{
         setTodoData(event.target.value)
         
     }
+
+
  const onclick=()=>{
+    if(index!=null){
+
+        dispatchFunction({
+            type:"update-data",
+            payload:todoData,
+            index: index
+    
+        });
+        setIndex(null)
+    }
+    else{
     dispatchFunction({
 type:"add-data",
 payload:todoData
     })
     setTodoData("")
- }
+ }}
 
 
  const onDelete=(index)=>{
-const filterData=currentState.todo.filter((_,i)=>index!=i)
+const filterData=currentState.todo.filter((_,i)=>index!==i)
 
-console.log(filterData)
+
 dispatchFunction({
     type:"Delete",
     payload:filterData
 })
 
  }
- const onUpdate=(index=>{
-    onChange(index);
-    })
+ const onUpdate=(index)=>{
+   
+  
+    setTodoData(currentState.todo[index]);
+    setIndex(index);
+
+    }
     return (<>
     <input type="text" value={todoData} onChange={onChange}/>
     <button onClick={onclick}>add</button>

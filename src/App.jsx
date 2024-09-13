@@ -1,22 +1,16 @@
 
 import './App.css'
-import NavBar from './components/nav'
-import DefaultCarousel from "./components/carousel"
-import Cards  from './components/cards'
+import Reducer from './functional/reducer'
+
+import TaskManagement from './functional/taskManagement'
 
 
 function App() {
   return(
 <>
 
-<div style= {{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly",padding:"4px"}}>
-  <Cards/>
-  <Cards/>
-  <Cards/>
-  <Cards/>
-
-</div>
-
+{/* <TaskManagement/> */}
+<Reducer/>
 
 </>
   )}
