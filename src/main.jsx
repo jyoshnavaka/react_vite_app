@@ -10,8 +10,8 @@ createRoot(document.getElementById('root')).render(
 <React.StrictMode>
 <App></App>
   
-<BrowserRouter>
-{/* <Navigators></Navigators> */}
-</BrowserRouter>
+{/* <BrowserRouter>
+
+</BrowserRouter> */}
 </React.StrictMode>
 )

@@ -1,24 +1,24 @@
 
 import './App.css'
-import { AddDelete } from './class/AddandDelete.jsx'
-
-import { FakeStoreData } from './class/fetchandAxios.jsx'
+import NavBar from './components/nav'
+import DefaultCarousel from "./components/carousel"
+import Cards  from './components/cards'
+import {InstagramLoader} from "./components/loader"
+import Footer from './components/footer'
 
 function App() {
-  
-
   return(
-
-  
 <>
 
- {/* <FakeStoreData></FakeStoreData> */}
- <AddDelete/>
+<div style= {{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly",padding:"4px"}}>
+  <Cards/>
+  <Cards/>
+  <Cards/>
+  <Cards/>
+
+</div>
 
 
 </>
   )}
-
-
-
   export  default App
