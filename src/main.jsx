@@ -9,9 +9,5 @@ import Navigators from './functional/navigators.jsx'
 createRoot(document.getElementById('root')).render(
 <React.StrictMode>
 <App></App>
-  
-{/* <BrowserRouter>
-
-</BrowserRouter> */}
 </React.StrictMode>
 )
