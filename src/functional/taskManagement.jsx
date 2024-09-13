@@ -14,7 +14,7 @@ const [object,setObject]=useState([])
 const handlerInput=(event)=>{
 const {name,value}=event.target;
 
-//console.log(name,value)
+
 setInput({...input,
     [name]: value})
 

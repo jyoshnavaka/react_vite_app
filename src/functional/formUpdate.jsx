@@ -6,7 +6,7 @@ export const TableFormUpdate = () => {
   const obj = {
     update: false,
     home: false,
-    editIndex: null, // Track the index of the item being edited
+    editIndex: null,
   };
   const [display, setDisplay] = useState(obj);
   const [modal, setModal] = useState(false);
