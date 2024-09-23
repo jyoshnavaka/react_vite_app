@@ -1,17 +1,26 @@
-
-import './App.css'
-import Reducer from './functional/reducer'
-
-import TaskManagement from './functional/taskManagement'
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import TaskManagement from "./taskManagement";
+import MarkedTasks from "./dIsplayTable"
 
 function App() {
-  return(
-<>
+    return (
 
+     <>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Task Management</Link>
+                    </li>
+                  
+                </ul>
+            </nav>
+            <Routes>
+                <Route path="/" element={<TaskManagement />} />
+                
+            </Routes>
+     </>
+    );
+}
 
-<Reducer/>
-
-</>
-  )}
-  export  default App
+export default App;

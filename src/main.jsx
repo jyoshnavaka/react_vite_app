@@ -8,6 +8,8 @@ import Navigators from './functional/navigators.jsx'
 
 createRoot(document.getElementById('root')).render(
 <React.StrictMode>
-<App></App>
+<BrowserRouter>
+<App/>
+</BrowserRouter>
 </React.StrictMode>
 )
